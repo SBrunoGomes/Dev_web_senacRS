@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+</head>
+<body>
+  
+  <h1 align = "center">Curriculum Profissional</h1>
+  
+<div style="width:50%; margin:auto" >
+<form action="contato.php">  
+    <fieldset>
+      <legend>Entre em Contato</legend>
+      <label for="Nome">Nome:</label>
+      <input type="text" id="Nome" name="Nome">
+      &emsp;
+      <label for="SobreNome">Sobrenome:</label>
+      <input type="text" id="SobreNome" name="SobreNome">
+      <br>
+      <br>
+      <label for="Endereco">Endereço</label>
+      <select name="selecionar" id="selecionar">
+        <option value="rua">Rua</option>
+        <option value="Avenida">Avenida</option>
+        <option value="Praça">Praça</option>
+      </select>
+      <input type="text" id="Endereco" name="Endereco">
+      <br>
+      <br>
+      <label for="Cidade">Cidade:</label>
+      <input type="text" id="Cidade" name="Cidade">
+      &emsp;
+      <label for="Bairro">Bairro:</label>
+      <input type="text" id="Bairro" name="Bairro">      
+      &emsp;
+      
+      <label for="Cep">Cep:</label>
+      <input type="number" id="Cep" name="Cep">
+
+      <br>
+      <br>
+      <label for="Telefone">Telefone:</label>
+      <input type="tel" id="Telefone" name="Telefone">
+
+      <br>
+      <br>
+
+      <h4>Assunto:</h4>
+      <textarea name="textarea" id="textarea" cols="100%" rows="10"></textarea>
+
+      <br>
+      <br>
+
+      <input type="reset" value="Limpar campos">
+      <input type="submit" value="Enviar Contato">
+      
+  
+    </fieldset>
+</form>
+<br>
+<a href="curiculum01.html">Voltar Home</a>
+</div>
+
+
+</body>
+</html>
