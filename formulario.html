@@ -1,69 +1,90 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-br">
+<!-- CABEÇARIO DO SITE -->
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de Contato</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
 </head>
-<body>
-  
-  <h1 align = "center">Curriculum Profissional</h1>
-  
-<div style="width:50%; margin:auto" >
-<form action="contato.php">  
-    <fieldset>
-      <legend>Entre em Contato</legend>
-      <label for="Nome">Nome:</label>
-      <input type="text" id="Nome" name="Nome">
-      &emsp;
-      <label for="SobreNome">Sobrenome:</label>
-      <input type="text" id="SobreNome" name="SobreNome">
-      <br>
-      <br>
-      <label for="Endereco">Endereço</label>
-      <select name="selecionar" id="selecionar">
-        <option value="rua">Rua</option>
-        <option value="Avenida">Avenida</option>
-        <option value="Praça">Praça</option>
-      </select>
-      <input type="text" id="Endereco" name="Endereco">
-      <br>
-      <br>
-      <label for="Cidade">Cidade:</label>
-      <input type="text" id="Cidade" name="Cidade">
-      &emsp;
-      <label for="Bairro">Bairro:</label>
-      <input type="text" id="Bairro" name="Bairro">      
-      &emsp;
-      
-      <label for="Cep">Cep:</label>
-      <input type="number" id="Cep" name="Cep">
-
-      <br>
-      <br>
-      <label for="Telefone">Telefone:</label>
-      <input type="tel" id="Telefone" name="Telefone">
-
-      <br>
-      <br>
-
-      <h4>Assunto:</h4>
-      <textarea name="textarea" id="textarea" cols="100%" rows="10"></textarea>
-
-      <br>
-      <br>
-
-      <input type="reset" value="Limpar campos">
-      <input type="submit" value="Enviar Contato">
-      
-  
-    </fieldset>
-</form>
-<br>
-<a href="curiculum01.html">Voltar Home</a>
-</div>
-
-
-</body>
+<!-- INICIO DO SITE COM COLORAÇÃO BLACK-->
+<body style="background-color: rgb(15, 15, 15);">
+    <h1 style="text-align: center; color: rgb(255, 255, 255);"><u> Entre em contato :</u></h1>
+    <!-- DIVISÃO COM MARGEM DO CONTEUDO DO SITE -->
+        <div style="width: 50%;margin: auto; color: rgb(255, 255, 255);">
+            <fieldset>
+                <!-- CAIXA DE TEXTOS PARA INFORMAÇÕES PESSOAIS USUARIO -->
+                <legend>Informações pessoais</legend>
+                <form action="informaçoes pessoais">
+                    <label for="Nome">Nome :</label>
+                    <input type="text" name="Nome" id="Nome">
+                    &emsp;
+                    <label for="Sobrenome">Sobrenome :</label>
+                    <input type="text" name="SobreNome" id="SobreNome">
+                    <br><br>
+                    <label for="Telefone">Telefone :</label>
+                    <input type="text" name="Telefone" id="Telefone">
+                    &emsp;
+                    <label for="Cidade">Cidade :</label>
+                    <select name="Cidade" id="Cidade">
+                        <option value="">Opções</option>
+                        <option value="AC">AC - Acre</option>
+                        <option value="AL">AL - Alagoas</option>
+                        <option value="AP">AP - Amapá</option>
+                        <option value="AM">AM - Amazonas</option>
+                        <option value="BA">BA - Bahia</option>
+                        <option value="CE">CE - Ceará</option>
+                        <option value="DF">DF - Distrito Federal</option>
+                        <option value="ES">ES - Espírito Santo</option>
+                        <option value="GO">GO - Goiás</option>
+                        <option value="MA">MA - Maranhão</option>
+                        <option value="MT">MT - Mato Grosso</option>
+                        <option value="MS">MS - Mato Grosso do Sul</option>
+                        <option value="MG">MG - Minas Gerais</option>
+                        <option value="PA">PA - Pará</option>
+                        <option value="PB">PB - Paraíba</option>
+                        <option value="PR">PR - Paraná</option>
+                        <option value="PE">PE - Pernambuco</option>
+                        <option value="PI">PI - Piauí</option>
+                        <option value="RJ">RJ - Rio de Janeiro</option>
+                        <option value="RN">RN - Rio Grande do Norte</option>
+                        <option value="RS">RS - Rio Grande do Sul</option>
+                        <option value="RO">RO - Rondônia</option>
+                        <option value="RR">RR - Roraima</option>
+                        <option value="SC">SC - Santa Catarina</option>
+                        <option value="SP">SP - São Paulo</option>
+                        <option value="SE">SE - Sergipe</option>
+                        <option value="TO">TO - Tocantins</option>
+                    </select>
+                    <input type="text">
+                    <br><br>
+                    <label for="bairro">Bairro :</label> 
+                    <input type="text" name="bairro" id="bairro">
+                    &emsp;
+                    <label for="Endereco">Endereco :</label>
+                    <select name="Endereço" id="Endereço">
+                        <option value="">Opções</option>
+                        <option value="Rua">Rua</option>
+                        <option value="Lagouro">Lagouro</option>
+                        <option value="Avenida">Avenida</option>
+                    </select>
+                    <input type="text" name="Endereco" id="Endereco">
+                    &emsp;
+                    <h4 style="text-align: center; color: rgb(255, 255, 255);">Assunto :</h4>
+                    <textarea name="Assunto" id="Assunto" cols="100" rows="10"></textarea>
+                    <br><br>
+                    <!-- BOTÕES DE LIMPAR E ENVIAR INFORMAÇÕES PESSOAIS -->
+                    <input type="reset" value="Limpar campos">
+                    <button onclick="processInput(event)">Enviar Formulário</button>
+                    <script>
+                        function processInput(event){
+                            event.preventDefault();
+                            alert("Excelente ! ENVIADO COM SUCESSO PARA O GOMES !");
+                        }
+                    </script>
+                </form>
+            </fieldset>
+        </div>    
+    </body>
 </html>
+<!-- FINAL DO SITE -->
